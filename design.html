@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design — Vrinda Agarwal</title>
+    <meta name="description" content="Visual portfolio of architectural design, computational work, and fabrication projects.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-sticky">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">VA</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="design.html" class="nav-link active">Design</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Design</h1>
+            <p class="page-subtitle">Visual exploration of architectural design, computational processes, and digital fabrication.</p>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="design-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="all">All</button>
+                <button class="filter-tab" data-category="architecture">Architecture</button>
+                <button class="filter-tab" data-category="computational">Computational</button>
+                <button class="filter-tab" data-category="fabrication">Fabrication</button>
+                <button class="filter-tab" data-category="visualization">Visualizations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery -->
+    <section class="design-gallery">
+        <div class="container">
+            <div class="masonry-grid" id="masonryGrid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="architecture">
+                    <img src="images/design/pavilion-render.jpg" alt="Parametric Pavilion Design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Parametric Pavilion</h4>
+                        <p class="gallery-category">Architecture</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="computational">
+                    <img src="images/design/grasshopper-definition.jpg" alt="Grasshopper Algorithm" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Adaptive Structure Algorithm</h4>
+                        <p class="gallery-category">Computational</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="images/design/3d-printed-model.jpg" alt="3D Printed Prototype" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Modular System Prototype</h4>
+                        <p class="gallery-category">Fabrication</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="visualization">
+                    <img src="images/design/data-visualization.jpg" alt="Urban Data Visualization" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Urban Flow Analysis</h4>
+                        <p class="gallery-category">Visualization</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="architecture">
+                    <img src="images/design/housing-study.jpg" alt="Housing Study Model" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Modular Housing Study</h4>
+                        <p class="gallery-category">Architecture</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="computational">
+                    <img src="images/design/structural-optimization.jpg" alt="Structural Optimization" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Structural Optimization</h4>
+                        <p class="gallery-category">Computational</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="images/design/robotic-assembly.jpg" alt="Robotic Assembly Process" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Robotic Assembly</h4>
+                        <p class="gallery-category">Fabrication</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="visualization">
+                    <img src="images/design/bim-dashboard.jpg" alt="BIM Analytics Dashboard" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">BIM Analytics Dashboard</h4>
+                        <p class="gallery-category">Visualization</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-category="architecture">
+                    <img src="images/design/urban-intervention.jpg" alt="Urban Intervention Proposal" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Urban Intervention</h4>
+                        <p class="gallery-category">Architecture</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item" data-category="computational">
+                    <img src="images/design/form-finding.jpg" alt="Form Finding Algorithm" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Form Finding Study</h4>
+                        <p class="gallery-category">Computational</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="images/design/material-tests.jpg" alt="Material Testing" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Material Experiments</h4>
+                        <p class="gallery-category">Fabrication</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item" data-category="visualization">
+                    <img src="images/design/performance-analysis.jpg" alt="Building Performance Analysis" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Performance Analysis</h4>
+                        <p class="gallery-category">Visualization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for Fullscreen Viewing -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+            <button class="lightbox-prev" id="lightboxPrev">❮</button>
+            <button class="lightbox-next" id="lightboxNext">❯</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; 2024 Vrinda Agarwal</p>
+                <div class="footer-contact">
+                    <a href="mailto:your.email@domain.com" class="footer-email">your.email@domain.com</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/yourprofile" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/yourusername" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/design.js"></script>
+</body>
+</html>
