@@ -52,9 +52,9 @@ function initNavigation() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 100) {
-            nav.style.backgroundColor = 'rgba(28, 28, 28, 0.98)';
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
         } else {
-            nav.style.backgroundColor = 'rgba(28, 28, 28, 0.95)';
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
         }
         
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
