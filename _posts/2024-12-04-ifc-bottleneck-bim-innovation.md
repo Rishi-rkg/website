@@ -20,7 +20,7 @@ The Industry Foundation Classes (IFC) format was designed as a neutral, open sta
 
 But IFC has never lived up to its promise. Data loss during translation is common. Geometry breaks, metadata disappears, and parametric relationships flatten into "dumb" objects. What was supposed to unite the industry often feels like a compromise. Today the question is unavoidable: is IFC still a gift, or has it become a hurdle?
 
-![Photo by Ron Lach | Pexels][[/assets/images/ifc_pexels-ron-lach-9830816.jpg' | relative_url]]
+![Photo by Ron Lach | Pexels](/website/assets/images/ifc_pexels-ron-lach-9830816.jpg)
 
 ## Why Change Feels Impossible
 
