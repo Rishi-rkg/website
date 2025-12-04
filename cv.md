@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 
 **Rishi Gupta**  
-Bangalore, India | [mailrkg3@gmail.com](mailto:mailrkg3@gmail.com) | +91 8210208963
+Bangalore, India | [mailrkg3@gmail.com](mailto:mailrkg3@gmail.com) 
 
 ---
 
