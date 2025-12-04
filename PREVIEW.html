@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi Gupta - Site Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #F2EFE9;
+      --bg-secondary: #E9E5DC;
+      --gray-light: #BFBFBD;
+      --gray-medium: #8C8C8C;
+      --text-primary: #262626;
+      --text-secondary: #4a4a4a;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    header {
+      padding: 4rem 0 2rem;
+      border-bottom: 1px solid var(--gray-light);
+      margin-bottom: 4rem;
+    }
+    
+    .site-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    nav a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    
+    nav a:hover {
+      border-bottom-color: var(--text-primary);
+    }
+    
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 5rem;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    
+    .hero-intro {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      max-width: 700px;
+      color: var(--text-secondary);
+      margin-bottom: 4rem;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .btn {
+      font-family: 'Oswald', sans-serif;
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      border: 2px solid var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.2s ease;
+      font-size: 1rem;
+      text-decoration: none;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+    }
+    
+    .btn-secondary {
+      border-color: var(--gray-medium);
+      color: var(--text-secondary);
+    }
+    
+    .btn-secondary:hover {
+      background-color: var(--gray-medium);
+      color: var(--bg-primary);
+    }
+    
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    
+    .post-item {
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    
+    .post-meta {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .post-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    
+    .post-excerpt {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+    
+    .read-more {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: var(--text-primary);
+      border-bottom: 2px solid var(--gray-medium);
+    }
+    
+    .read-more:hover {
+      border-bottom-color: var(--text-primary);
+    }
+    
+    footer {
+      margin-top: 6rem;
+      padding: 4rem 0;
+      border-top: 1px solid var(--gray-light);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    
+    .info-box {
+      background-color: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+    
+    .info-box strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="site-title">Rishi Gupta</h1>
+      <nav>
+        <ul>
+          <li><a href="#" style="border-bottom-color: var(--text-primary);">Home</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Rishi Gupta</h1>
+        <p class="hero-intro">
+          Architect and BIM Instructor specializing in construction automation, computational design, and generative AI for architectural visualization. Based in Bangalore, India.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn">View CV</a>
+          <a href="#" class="btn btn-secondary">Read Blog</a>
+        </div>
+      </section>
+      
+      <div class="info-box">
+        <strong>🎉 This is a preview of your website!</strong>
+        This shows how your site will look once deployed. The actual site will be fully functional with working links, blog posts, and your complete CV.
+      </div>
+      
+      <section>
+        <h2>Recent Posts</h2>
+        
+        <div class="post-item">
+          <p class="post-meta">December 01, 2024</p>
+          <h3 class="post-title">Getting Started with Computational Design in Architecture</h3>
+          <p class="post-excerpt">
+            This is an example blog post to demonstrate how the blogging system works. When you write your own posts, they'll appear automatically on the blog page and homepage...
+          </p>
+          <a href="#" class="read-more">Read more →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Rishi Gupta. Built with Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>

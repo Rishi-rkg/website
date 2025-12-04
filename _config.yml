@@ -1,0 +1,45 @@
+# Site settings
+title: Rishi Gupta
+email: mailrkg3@gmail.com
+description: >-
+  Architect and BIM Instructor specializing in construction automation 
+  and computational design.
+baseurl: "" # Leave empty for username.github.io or add "/repo-name" for project site
+url: "" # Will be set by GitHub Pages
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Rishi Gupta"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
