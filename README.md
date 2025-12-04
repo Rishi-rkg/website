@@ -1,246 +1,133 @@
-# Rishi Gupta - Personal Portfolio & Blog
+# Rishi Gupta - Personal Website
 
-A minimal, professional personal website built with Jekyll and hosted on GitHub Pages.
+This repository hosts the personal website and blog of **Rishi Gupta**, a Master's student in Construction Management at the University of Florida, specializing in BIM implementation, construction automation, and digital project delivery.
+
+🌐 **Live Site:** [https://YOUR-USERNAME.github.io/website](https://rishi-rkg.github.io/website)
+
+---
+
+## About This Site
+
+This is a minimal, professional portfolio website built with a focus on clean design and straightforward content delivery. The site features:
+
+- **Professional CV/Resume** - Showcasing education, work experience, and certifications
+- **Technical Blog** - Writing about BIM, construction technology, automation, and industry innovation
+- **Minimal Aesthetic** - Clean typography and a carefully chosen color palette
+- **Simple Maintenance** - Markdown-based content makes updates effortless
+
+---
+
+## Tech Stack
+
+This website uses:
+
+- **Jekyll** - Static site generator
+- **GitHub Pages** - Free hosting and automatic deployment
+- **Markdown** - Simple content writing format
+- **Liquid** - Templating for dynamic content
+
+### Typography & Design
+
+- **Headers:** Oswald (tall, architectural feel)
+- **Body Text:** Source Sans Pro (clean, readable)
+- **Color Palette:** Warm minimal (#F2EFE9 background, #262626 text)
+
+---
+
+## Site Structure
+
+```
+├── _layouts/          # HTML templates for different page types
+├── _includes/         # Reusable components (header, footer)
+├── _posts/            # Blog posts in Markdown format
+├── assets/
+│   ├── css/          # Site styling
+│   ├── images/       # Blog images and graphics
+│   └── *.pdf         # Downloadable resume
+├── index.html        # Homepage
+├── cv.md             # CV/Resume page
+└── blog.html         # Blog listing page
+```
+
+---
+
+## Writing Blog Posts
+
+New blog posts are added by creating Markdown files in the `_posts/` folder following this naming convention:
+
+```
+YYYY-MM-DD-post-title.md
+```
+
+Each post includes frontmatter with metadata:
+
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: YYYY-MM-DD
+---
+
+Your content here in Markdown...
+```
+
+Once committed to the repository, GitHub Pages automatically rebuilds the site and publishes the new post.
+
+---
 
 ## Features
 
-- 📱 Fully responsive design
-- 📝 Simple Markdown-based blogging
-- 🎨 Minimal aesthetic with custom color palette
-- ⚡ Fast static site generation
-- 🔍 SEO optimized
-- 📄 Professional CV page
+✅ **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile  
+✅ **Fast Loading** - Static HTML means instant page loads  
+✅ **SEO Optimized** - Proper meta tags and semantic HTML  
+✅ **Automatic Deployment** - Push to GitHub = live site update  
+✅ **Version Controlled** - All changes tracked with Git  
+✅ **Zero Maintenance** - No databases, no server updates needed  
 
-## Color Palette
-
-- Background: `#F2EFE9` (warm off-white)
-- Secondary Background: `#E9E5DC`
-- Light Gray: `#BFBFBD`
-- Medium Gray: `#8C8C8C`
-- Text: `#262626` (near black)
-
-## Typography
-
-- **Headers**: Oswald (tall, condensed)
-- **Body**: Source Sans Pro (clean, readable)
-- **Code**: JetBrains Mono
-
-## Quick Start
-
-### Option 1: Deploy to GitHub Pages (Recommended)
-
-1. **Create a new repository on GitHub**
-   - Go to https://github.com/new
-   - Name it: `your-username.github.io` (for user site) or any name (for project site)
-   - Make it public
-   - Don't initialize with README
-
-2. **Upload these files to your repository**
-   
-   If using command line:
-   ```bash
-   cd rishi-portfolio
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-   git push -u origin main
-   ```
-
-   Or simply drag and drop the files into GitHub's web interface.
-
-3. **Enable GitHub Pages**
-   - Go to your repository settings
-   - Navigate to "Pages" in the left sidebar
-   - Under "Source", select "Deploy from a branch"
-   - Select branch: `main` and folder: `/ (root)`
-   - Click "Save"
-
-4. **Update configuration**
-   - Edit `_config.yml`:
-     - If using `username.github.io`: set `baseurl: ""`
-     - If using project site: set `baseurl: "/your-repo-name"`
-   - Update social links in `_includes/footer.html`
-
-5. **Wait for deployment**
-   - GitHub will automatically build and deploy your site
-   - Check the "Actions" tab to see build progress
-   - Your site will be live at:
-     - `https://your-username.github.io` (user site)
-     - `https://your-username.github.io/repo-name` (project site)
-
-### Option 2: Run Locally
-
-1. **Install Ruby and Jekyll**
-   - Install Ruby: https://www.ruby-lang.org/en/documentation/installation/
-   - Install Bundler: `gem install bundler`
-
-2. **Install dependencies**
-   ```bash
-   cd rishi-portfolio
-   bundle install
-   ```
-
-3. **Run the site locally**
-   ```bash
-   bundle exec jekyll serve
-   ```
-   
-4. **View in browser**
-   - Open http://localhost:4000
-
-## How to Add Blog Posts
-
-Adding a blog post is super simple:
-
-1. **Create a new file** in the `_posts` folder
-2. **Name it** following this format: `YYYY-MM-DD-title-of-post.md`
-   - Example: `2024-12-05-my-first-post.md`
-
-3. **Add frontmatter** at the top:
-   ```yaml
-   ---
-   layout: post
-   title: "Your Post Title"
-   date: 2024-12-05
-   ---
-   ```
-
-4. **Write your content** in Markdown below the frontmatter
-
-5. **Add images** (optional):
-   - Place images in `assets/images/`
-   - Reference them: `![Alt text](/assets/images/your-image.jpg)`
-
-6. **Push to GitHub** - your post will appear automatically!
-
-### Example Blog Post
-
-```markdown
----
-layout: post
-title: "My Journey with BIM"
-date: 2024-12-05
 ---
 
-## Introduction
+## Use This Template
 
-This is my first blog post about BIM and construction automation.
+Feel free to fork this repository and adapt the layout for your own personal website! The structure is intentionally simple and well-documented.
 
-### Why BIM Matters
+### Quick Start:
 
-BIM has revolutionized the way we approach construction...
+1. **Fork this repository** or copy the code
+2. **Update `_config.yml`** with your information
+3. **Replace content** in `cv.md` and `index.html`
+4. **Write your first post** in `_posts/`
+5. **Enable GitHub Pages** in repository settings
+6. **Your site goes live!**
 
-![BIM Workflow](/assets/images/bim-workflow.png)
+#### More Details at [QUICK_START.md](/QUICK_START.md)
 
-## Conclusion
+---
 
-These are my key takeaways from working with BIM.
-```
+### Key Files to Customize:
 
-## Customization
+- `_config.yml` - Site title, email, description
+- `index.html` - Homepage hero text
+- `cv.md` - Your CV/resume content
+- `_includes/footer.html` - Social media links
+- `assets/css/style.css` - Colors and styling
 
-### Update Your Information
+#### More Details at [START_HERE.md](/START_HERE.md)
 
-1. **_config.yml**: Site title, email, description
-2. **cv.md**: Your CV/resume content
-3. **index.html**: Homepage hero text
-4. **_includes/footer.html**: Social media links
-
-### Change Colors
-
-Edit the CSS variables in `assets/css/style.css`:
-
-```css
-:root {
-  --bg-primary: #F2EFE9;
-  --text-primary: #262626;
-  /* etc. */
-}
-```
-
-### Modify Layout
-
-- **_layouts/**: HTML templates for different page types
-- **_includes/**: Reusable components (header, footer)
-- **assets/css/style.css**: All styling
-
-## Project Structure
-
-```
-rishi-portfolio/
-├── _config.yml           # Site configuration
-├── _layouts/             # HTML templates
-│   ├── default.html      # Base layout
-│   ├── home.html         # Homepage
-│   ├── page.html         # Static pages
-│   └── post.html         # Blog posts
-├── _includes/            # Reusable components
-│   ├── header.html
-│   └── footer.html
-├── _posts/               # Blog posts (add .md files here!)
-│   └── 2024-12-01-getting-started.md
-├── assets/
-│   ├── css/
-│   │   └── style.css     # All styles
-│   └── images/           # Blog images
-├── index.html            # Homepage
-├── cv.md                 # CV page
-├── blog.html             # Blog listing
-├── Gemfile               # Ruby dependencies
-└── README.md             # This file
-```
-
-## Troubleshooting
-
-### Site not updating after push
-- Check the "Actions" tab in your GitHub repository
-- Look for build errors in the workflow logs
-- GitHub Pages can take 1-2 minutes to update
-
-### CSS/styling not loading
-- Check your `baseurl` in `_config.yml`
-- For project sites, it should be `/your-repo-name`
-- For user sites (`username.github.io`), it should be empty: `""`
-
-### Images not showing
-- Make sure images are in `assets/images/`
-- Use absolute paths: `/assets/images/image.jpg`
-- Or relative to baseurl: `{{ '/assets/images/image.jpg' | relative_url }}`
-
-### Local build errors
-- Run `bundle update` to update dependencies
-- Check Ruby version (requires 2.5.0 or higher)
-
-## Adding Your PDF Resume
-
-1. Copy your PDF resume to `assets/` folder
-2. The CV page already links to it: `/assets/RishiCV_.pdf`
-3. Rename your PDF to match or update the link in `cv.md`
-
-## Custom Domain (Optional)
-
-To use your own domain (e.g., `rishigupta.com`):
-
-1. Buy a domain from a registrar (Namecheap, Google Domains, etc.)
-2. Create a file named `CNAME` in your repository root
-3. Add your domain to the file: `rishigupta.com`
-4. Configure DNS settings at your registrar:
-   - Add an A record pointing to GitHub's IPs
-   - Or add a CNAME record pointing to `your-username.github.io`
-5. See GitHub's guide: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
-
-## Support
-
-- Jekyll Documentation: https://jekyllrb.com/docs/
-- GitHub Pages: https://docs.github.com/en/pages
-- Markdown Guide: https://www.markdownguide.org/
+---
 
 ## License
 
-Free to use and modify for your personal website.
+The website structure and code are free to use. Feel free to adapt this design for your own portfolio or blog.
+
+Content (blog posts, CV) © Rishi Gupta
 
 ---
 
-Built with ❤️ using Jekyll and GitHub Pages
+## Contact
+
+- **Email:** [gupta.rishi@ufl.edu](mailto:gupta.rishi@ufl.edu)
+- **Location:** Gainesville, Florida
+
+---
+
+*Built with Jekyll. Hosted on GitHub Pages. Maintained with care.*
