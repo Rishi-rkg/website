@@ -10,7 +10,7 @@ But the truth is bigger and more expensive: **planned obsolescence is built into
 
 It didn't used to be this way. Products once lasted because they were designed to last. Today, failure is often engineered.
 
-![Photo by Gary Chan]({{'assets\images\planned_obsolescence\gary-chan-YzSZN3qvHeo-unsplash.webp' | relative_url }})
+![Photo by Gary Chan]({{ 'assets\images\planned_obsolescence\gary-chan-YzSZN3qvHeo-unsplash.webp' | relative_url }})
 Photo by <a href="https://unsplash.com/@gary_at_unsplash?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gary Chan</a> on <a href="https://unsplash.com/photos/litter-signage-YzSZN3qvHeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 
