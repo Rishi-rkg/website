@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 
 **Rishi Gupta**  
-Gainesville, Florida | [gupta.rishi@ufl.edu](mailto:gupta.rishi@ufl.edu) | +1 (352) 682-9032
+Gainesville, Florida | [gupta.rishi@ufl.edu](mailto:gupta.rishi@ufl.edu)
 
 ---
 
