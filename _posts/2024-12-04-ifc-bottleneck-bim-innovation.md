@@ -2,6 +2,11 @@
 layout: post
 title: "The IFC Bottleneck: Why BIM Innovation Stalls Under Industry Gatekeepers"
 date: 2024-12-04
+tags:
+  - BIM & Technology
+  - Industry Analysis
+  - Opinion
+image: "/website/assets/images/ifc_pexels-ron-lach-9830816.webp"
 ---
 
 ## BIM's Bold Promise
@@ -19,9 +24,6 @@ The Industry Foundation Classes (IFC) format was designed as a neutral, open sta
 ## Where IFC Falls Short
 
 But IFC has never lived up to its promise. Data loss during translation is common. Geometry breaks, metadata disappears, and parametric relationships flatten into "dumb" objects. What was supposed to unite the industry often feels like a compromise. Today the question is unavoidable: is IFC still a gift, or has it become a hurdle?
-
-![Photo by Ron Lach - Pexels]({{ '/assets/images/ifc_pexels-ron-lach-9830816.webp' | relative_url }})
-[*Photo by Ron Lach*](https://www.pexels.com/photo/computer-tied-with-a-black-and-yellow-tape-9830816/)
 
 ## Why Change Feels Impossible
 

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: The Price of Throwaway Design - How Planned Obsolescence Drains Your Wallet
+title: "The Price of Throwaway Design - How Planned Obsolescence Drains Your Wallet"
 date: 2024-12-05
+category: "Consumerism"
+image: "assets/images/planned_obsolescence/gary-chan-YzSZN3qvHeo-unsplash.webp"
 ---
 
 For most people, *planned obsolescence* is something that happens inside a smartphone or a laptop — a battery sealed with glue, a software update that slows everything down, or a new model that makes last year's look embarrassingly old.

@@ -9,3 +9,5 @@ Gemfile.lock
 *.swp
 *.swo
 *~
+PREVIEW.html
+.unpublished_blogs_local/
