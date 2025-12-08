@@ -4,27 +4,6 @@ title: Curriculum Vitae
 permalink: /cv/
 ---
 
-## **Rishi Gupta**  
-Gainesville, Florida | [gupta.rishi@ufl.edu](mailto:gupta.rishi@ufl.edu)
-
----
-
-## Education
-
-#### **Master of Science in Construction Management (MSCM)**  
-University of Florida, Gainesville, Florida  
-*Fall 2025 - Graduating Fall 2026*
-
-Relevant Coursework: Project Planning & Scheduling, Cost Estimation, Construction Operations, Contract Administration
-
-#### **Bachelor of Architecture** (Graduated First Class with Distinction)  
-Birla Institute of Technology Mesra, Ranchi, India  
-*August 2017 - May 2022*
-
-Relevant Coursework: Building Construction & Materials, Project Management, Construction Technology, Structural Systems, Building Services & Mechanical Systems
-
----
-
 ## Work Experience
 
 ### Project Architect
@@ -53,6 +32,22 @@ Relevant Coursework: Building Construction & Materials, Project Management, Cons
 
 ---
 
+## Education
+
+#### **Master of Science in Construction Management (MSCM)**
+University of Florida, Gainesville, Florida
+*Fall 2025 - Graduating Fall 2026*
+
+Relevant Coursework: Project Planning & Scheduling, Cost Estimation, Construction Operations, Contract Administration
+
+#### **Bachelor of Architecture** (Graduated First Class with Distinction)
+Birla Institute of Technology Mesra, Ranchi, India
+*August 2017 - May 2022*
+
+Relevant Coursework: Building Construction & Materials, Project Management, Construction Technology, Structural Systems, Building Services & Mechanical Systems
+
+---
+
 ## Skills and Interests
 
 #### **Project Management:** 
@@ -70,6 +65,12 @@ Cross-functional team leadership, Client relationship management, Technical docu
 
 - OSHA 30-Hour Construction Safety
 - Procore Certified: Project Manager
+
+---
+
+## Contact Information
+
+Gainesville, Florida | [gupta.rishi@ufl.edu](mailto:gupta.rishi@ufl.edu)
 
 ---
 
