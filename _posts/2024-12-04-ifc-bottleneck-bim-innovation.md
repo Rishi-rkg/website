@@ -6,12 +6,15 @@ tags:
   - BIM & Technology
   - Industry Analysis
   - Opinion
-image: "/website/assets/images/ifc_pexels-ron-lach-9830816.webp"
+image: "assets/images/ifc_bottleneck/brendan-church-pKeF6Tt3c08-unsplash.webp"
 ---
 
 ## BIM's Bold Promise
 
 Building Information Modeling (BIM) was envisioned in the late 20th century as a revolutionary way to centralize design, construction, and operation data. Its roots trace back to the 1970s with Charles Eastman's concept of the "Building Description System." By the 1990s, major software players had transformed that vision into practical tools. BIM promised efficiency, collaboration, and accuracy across the building lifecycle. It was a digital twin before the phrase even existed.
+
+Title Photo by <a href="https://unsplash.com/@bdchu614?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brendan Church</a> on <a href="https://unsplash.com/photos/white-and-black-one-way-printed-road-signages-pKeF6Tt3c08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
 
 ## How Giants Took Over
 
