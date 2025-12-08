@@ -76,10 +76,13 @@ permalink: /blog/
         {% assign post_tags = post_tags | push: tag %}
       {% endfor %}
     {% endif %}
-    {% assign tag_slugs = "" %}
+    {% comment %} Build slugified tags array properly {% endcomment %}
+    {% assign tag_slugs_array = "" | split: "" %}
     {% for tag in post_tags %}
-      {% assign tag_slugs = tag_slugs | append: tag | slugify | append: " " %}
+      {% assign slug = tag | slugify %}
+      {% assign tag_slugs_array = tag_slugs_array | push: slug %}
     {% endfor %}
+    {% assign tag_slugs = tag_slugs_array | join: " " %}
     
     <article class="post-card" 
              data-title="{{ post.title | downcase }}" 
@@ -134,9 +137,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
   const tagParam = urlParams.get('tag');
   if (tagParam) {
-    activeTags.add(tagParam);
+    // Handle comma-separated tags in URL
+    tagParam.split(',').forEach(t => activeTags.add(t.trim()));
     updateTagButtons();
     updateActiveFiltersDisplay();
+    filterAndSortPosts();
   }
   
   // Make tags on cards clickable
@@ -264,14 +269,14 @@ document.addEventListener('DOMContentLoaded', function() {
     posts.forEach(post => {
       const title = post.dataset.title || '';
       const excerpt = post.dataset.excerpt || '';
-      const postTags = (post.dataset.tags || '').split(' ').filter(t => t);
+      const postTags = (post.dataset.tags || '').split(' ').filter(t => t.length > 0);
       
       // Check search match
       const matchesSearch = currentSearch === '' || 
         title.includes(currentSearch) || 
         excerpt.includes(currentSearch);
       
-      // Check tag match
+      // Check tag match - post must have at least one of the active tags
       const matchesTags = activeTags.size === 0 || 
         postTags.some(tag => activeTags.has(tag));
       
