@@ -1,0 +1,346 @@
+/* =====================================================
+   BLOG ENHANCEMENTS - Add this to your style.css
+   ===================================================== */
+
+/* Blog Hero Header */
+.blog-hero {
+  background: linear-gradient(135deg, var(--text-primary) 0%, #3a3a3a 100%);
+  color: var(--bg-primary);
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-lg);
+  margin-top: calc(-1 * var(--spacing-lg));
+}
+
+.blog-hero h1 {
+  color: var(--bg-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.blog-hero-subtitle {
+  color: var(--gray-light);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Blog Controls - Search & Sort */
+.blog-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  border: 2px solid var(--gray-light);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.search-wrapper input:focus {
+  outline: none;
+  border-color: var(--text-primary);
+}
+
+.search-wrapper input::placeholder {
+  color: var(--gray-medium);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-medium);
+  pointer-events: none;
+}
+
+.sort-wrapper select {
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--gray-light);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238C8C8C' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  transition: border-color 0.2s ease;
+}
+
+.sort-wrapper select:focus {
+  outline: none;
+  border-color: var(--text-primary);
+}
+
+.sort-wrapper select:hover {
+  border-color: var(--text-primary);
+}
+
+/* Tag Filter Buttons */
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.tag-btn {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gray-light);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-btn:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.tag-btn.active {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* Active Filters Display */
+.active-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background: var(--bg-secondary);
+  flex-wrap: wrap;
+}
+
+.active-filters-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+#active-filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.active-filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: var(--bg-primary);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.2rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.remove-tag:hover {
+  opacity: 1;
+}
+
+.clear-filters-btn {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--gray-medium);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+/* Post Card */
+.post-card {
+  background: var(--bg-secondary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.post-card-link {
+  display: block;
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+.post-card-link:hover {
+  border: none;
+}
+
+.post-card-image {
+  height: 180px;
+  background: linear-gradient(135deg, var(--gray-medium) 0%, var(--text-secondary) 100%);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.post-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3) 100%);
+}
+
+.post-card-content {
+  padding: var(--spacing-md);
+}
+
+.post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.post-card-tag {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.6rem;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.post-card-tag:hover {
+  background: var(--gray-medium);
+}
+
+.post-card-title {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.3;
+}
+
+.post-card-meta {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.post-card-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* No Results */
+.no-results,
+.no-posts {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: var(--spacing-xl);
+  font-size: 1.1rem;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .blog-controls {
+    flex-direction: column;
+  }
+  
+  .sort-wrapper {
+    width: 100%;
+  }
+  
+  .sort-wrapper select {
+    width: 100%;
+  }
+  
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .active-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .clear-filters-btn {
+    margin-left: 0;
+    margin-top: var(--spacing-xs);
+  }
+}

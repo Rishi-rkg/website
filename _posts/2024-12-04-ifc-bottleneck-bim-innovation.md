@@ -2,6 +2,7 @@
 layout: post
 title: "The IFC Bottleneck: Why BIM Innovation Stalls Under Industry Gatekeepers"
 date: 2024-12-04
+category: "BIM & Technology"
 tags:
   - BIM & Technology
   - Industry Analysis

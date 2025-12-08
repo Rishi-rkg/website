@@ -2,7 +2,9 @@
 layout: post
 title: "The Price of Throwaway Design - How Planned Obsolescence Drains Your Wallet"
 date: 2024-12-05
+category: "Industry Analysis"
 tags:
+  - Industry Analysis
   - Consumerism
   - Opinion
 image: "assets/images/planned_obsolescence/gary-chan-YzSZN3qvHeo-unsplash.webp"
